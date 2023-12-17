@@ -14,6 +14,14 @@ const connectDB = async () => {
     }
 }
 
+app.get('/api/bookings',(req , res) => {
+    res.json({
+        success: true,
+        data : [],
+        message : "Booking is done"
+    })
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT , () => {
